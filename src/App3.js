@@ -24,7 +24,7 @@ const App = () => {
           {data.map(emoji => 
           <div> 
             <div class="card">
-              <div class="card-body" onClick={()=> {navigator.clipboard.writeText(emoji.symbol);alert("emoji copied")}}>
+              <div class="card-body">
                 {emoji.symbol} {emoji.title};
               </div>
             </div>
